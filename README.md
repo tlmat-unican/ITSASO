@@ -1,11 +1,27 @@
 # ITSASO
 
 <p align="center">
-  <img src="Logo_ITSASO.png" />
+  <img src="img/Logo_ITSASO.png" />
 </p>
 
 ## Description
 ITSASO (IoT Task Simulation and Adaptive Scheduling for Offloading) is a simulator designed to optimize the management and scheduling of IoT tasks in a Fog-Cloud environment. It leverages adaptive scheduling algorithms to dynamically offload tasks based on the current environment conditions.
+
+
+This platforms generates 3 types of nodes:
+- IoT nodes
+- Fog nodes
+- Cloud nodes
+
+<p align="center">
+  <img src="img/Platform_logo.svg" />
+</p>
+
+Ttraffic is generated and simulated in IoT nodes. Generated services can be either computed locally (at the IoT nodes) or offloaded to the Fog or Cloud nodes, depending on the decision taken by the IoT node itself, which is made based on its implemented scheduling policy and/or the system state. 
+
+<p align="center">
+  <img src="img/workflow_platform_logo.svg" />
+</p>
 
 The development of this platform builds upon the work presented in [[1](#references)], extending and enhancing its capabilities for a more flexible and customizable Fog-Cloud computing environment. The latest version of the platform is detailed in [[2](#references)], which includes a comparison between Control Theory and DRL approaches for offloading scheduling.
 
@@ -16,19 +32,20 @@ The development of this platform builds upon the work presented in [[1](#referen
 - Lightweight containerization with Docker.
 
 ## Requirements
-- Tested on: Ubuntu 20.04 LTS, Ubuntu 22.04 LTS  
+Tested on: 
+- Ubuntu 20.04 LTS
+- Ubuntu 22.04 LTS  
+
+Dependencies:
 - Python 3.8+
 - Docker
-- matplotlib\==3.5.3
-- numpy<2.0.0
-- pandas==2.2.2
-- gymnasium==0.29.1
-- psutil\==7.0.0
+
+All required Python libraries are listed in the `requirements.txt` file and can be installed as explained in the [[Installation](#installation)] section.
 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone git@github.com:necoville/ITSASO.git
+   git clone git@github.com:tlmat-unican/ITSASO.git
    cd ITSASO
    ```
 2. Install the required public libraries:
