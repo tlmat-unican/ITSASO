@@ -14,13 +14,13 @@ This platforms generates 3 types of nodes:
 - Cloud nodes
 
 <p align="center">
-  <img src="img/Platform_logo.svg" />
+  <img src="img/Platform_logo.svg" width="60%" />
 </p>
 
-Ttraffic is generated and simulated in IoT nodes. Generated services can be either computed locally (at the IoT nodes) or offloaded to the Fog or Cloud nodes, depending on the decision taken by the IoT node itself, which is made based on its implemented scheduling policy and/or the system state. 
+Traffic is generated and simulated in IoT nodes. Generated services can be either computed locally (at the IoT nodes) or offloaded to the Fog or Cloud nodes, depending on the decision taken by the IoT node itself, which is made based on its implemented scheduling policy and/or the system state. 
 
 <p align="center">
-  <img src="img/workflow_platform_logo.svg" />
+  <img src="img/workflow_platform_logo.svg" width="60%" />
 </p>
 
 The development of this platform builds upon the work presented in [[1](#references)], extending and enhancing its capabilities for a more flexible and customizable Fog-Cloud computing environment. The latest version of the platform is detailed in [[2](#references)], which includes a comparison between Control Theory and DRL approaches for offloading scheduling.
