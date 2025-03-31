@@ -1,0 +1,276 @@
+{
+    "simulation": {
+        "sim_time": 50.0,
+        "mode": "docker",
+        "traf_gen": "trafficGenPlus",
+        "traf_dist": "CONT",
+        "serv_dist": "CONT",
+        "slot_time": 1,
+        "pkt_len_dist": "CONT",
+        "traf_rate": [
+            5
+        ],
+        "pkt_len": 200,
+        "HEADERLENSIZE": 4,
+        "IDSIZE": 6,
+        "PKTSERLEN": 5,
+        "LENSEV": 5,
+        "serv_rate": 0.5,
+        "num_app": 1,
+        "tc_iot_fog_delay": "cnf/tc_iot_fog_delay.csv",
+        "delay_fog_cloud": [
+            650
+        ],
+        "algorithm": "Lyapunov",
+        "v": 1
+    },
+    "iot_nodes": 10,
+    "iot1": {
+        "host": "iot_node_1",
+        "port": 8087,
+        "num_proc": 1,
+        "battery": 100000.0,
+        "delay_req": -1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 1500.0
+        }
+    },
+    "iot2": {
+        "host": "iot_node_2",
+        "port": 8088,
+        "num_proc": 1,
+        "battery": 100000.0,
+        "delay_req": -1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 1500.0
+        }
+    },
+    "iot3": {
+        "host": "iot_node_3",
+        "port": 8089,
+        "num_proc": 1,
+        "battery": 100000.0,
+        "delay_req": -1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 1500.0
+        }
+    },
+    "iot4": {
+        "host": "iot_node_4",
+        "port": 8090,
+        "battery": 100000.0,
+        "delay_req": -1,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 1500.0
+        }
+    },
+    "iot5": {
+        "host": "iot_node_5",
+        "port": 8091,
+        "battery": 100000.0,
+        "delay_req": -1,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 1500.0
+        }
+    },
+    "iot6": {
+        "host": "iot_node_6",
+        "port": 8092,
+        "battery": 100000.0,
+        "delay_req": -1,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 1500.0
+        }
+    },
+    "iot7": {
+        "host": "iot_node_7",
+        "port": 8093,
+        "battery": 100000.0,
+        "delay_req": -1,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 1500.0
+        }
+    },
+    "iot8": {
+        "host": "iot_node_8",
+        "port": 8094,
+        "battery": 100000.0,
+        "delay_req": -1,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 1500.0
+        }
+    },
+    "iot9": {
+        "host": "iot_node_9",
+        "port": 8095,
+        "battery": 100000.0,
+        "delay_req": -1,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 1500.0
+        }
+    },
+    "iot10": {
+        "host": "iot_node_10",
+        "port": 8096,
+        "battery": 100000.0,
+        "delay_req": -1,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 1500.0
+        }
+    },
+    "iot11": {
+        "host": "iot_node_10",
+        "port": 8097,
+        "battery": 100000.0,
+        "delay_req": -1,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 1500.0
+        }
+    },
+    "iot12": {
+        "host": "iot_node_10",
+        "port": 8098,
+        "battery": 100000.0,
+        "delay_req": -1,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 1500.0
+        }
+    },
+    "iot13": {
+        "host": "iot_node_10",
+        "port": 8099,
+        "battery": 100000.0,
+        "delay_req": -1,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 1500.0
+        }
+    },
+    "iot14": {
+        "host": "iot_node_10",
+        "port": 8100,
+        "battery": 100000.0,
+        "delay_req": -1,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 1500.0
+        }
+    },
+    "iot15": {
+        "host": "iot_node_10",
+        "port": 8101,
+        "battery": 100000.0,
+        "delay_req": -1,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 1500.0
+        }
+    },
+    "iot16": {
+        "host": "iot_node_10",
+        "port": 8102,
+        "battery": 100,
+        "delay_req": 10,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 200000
+        }
+    },
+    "iot17": {
+        "host": "iot_node_10",
+        "port": 8103,
+        "battery": 100,
+        "delay_req": 10,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 200000
+        }
+    },
+    "iot18": {
+        "host": "iot_node_10",
+        "port": 8104,
+        "battery": 100,
+        "delay_req": 10,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 200000
+        }
+    },
+    "iot19": {
+        "host": "iot_node_10",
+        "port": 8105,
+        "battery": 100,
+        "delay_req": 10,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 200000
+        }
+    },
+    "iot20": {
+        "host": "iot_node_10",
+        "port": 8106,
+        "battery": 100,
+        "delay_req": 10,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 200000
+        }
+    },
+    "fog_nodes": 1,
+    "fog1": {
+        "host": "fog_node_1",
+        "port": 8094,
+        "control_port": 9000,
+        "fog_cost": 0,
+        "num_proc": 1,
+        "cola": 100000,
+        "processor1": {
+            "capacity": 15000.0
+        }
+    },
+    "cloud_nodes": 1,
+    "cloud1": {
+        "host": "cloud_node_1",
+        "port": 8082,
+        "control_port": 9001,
+        "capacity": 2000000000.0
+    },
+    "logger": {
+        "nodoFog": "CRITICAL",
+        "trafficGen": "CRITICAL",
+        "processor": "CRITICAL",
+        "service": "CRITICAL",
+        "cloud": "CRITICAL",
+        "master": "CRITICAL",
+        "iot": "CRITICAL"
+    }
+}

@@ -1,0 +1,5 @@
+matplotlib==3.5.3
+numpy<2.0.0
+pandas==2.2.2
+gymnasium==0.29.1
+psutil==7.0.0

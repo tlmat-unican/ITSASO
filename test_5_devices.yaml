@@ -1,0 +1,117 @@
+##  Autor: Neco Villegas Saiz
+##  Universidad de Cantabria    
+##  Fecha: 29/07/2022       
+
+#Compose para 1 nodo Fog y 1 nodo Cloud
+
+#CONFIG = fichero json
+#NUM = id del nodo
+
+#######################################################################################################
+
+#version: "3"
+services:
+  ########################## Nodo Master ##########################
+  #master_node:
+    #image: master_nodes
+    #privileged: true
+    #environment:
+      #- CONFIG=cnf/config.json
+    #volumes:
+      #- ./:/home/
+    #networks:
+      #- master
+
+  ######################### Nodos Cloud #########################
+  cloud_node_1:
+    image: cloud_nodes
+    privileged: true
+    environment:
+      - CONFIG=cnf/config.json
+      - NUM=1
+    volumes:
+      - ./:/home/
+    networks:
+      - cloud_net
+
+  ########################## Nodos Fog ##########################
+  fog_node_1:
+    image: fog_nodes
+    privileged: true
+    environment:
+      - CONFIG=cnf/config.json
+      - NUM=1
+    volumes:
+      - ./:/home/
+    networks:
+      - fog_net
+      - cloud_net
+      #- master
+
+  ########################## Nodos IoT ##########################
+  iot_node_1:
+    image: iot_nodes
+    privileged: true
+    environment:
+      - CONFIG=cnf/config.json
+      - NUM=1
+    volumes:
+      - ./:/home/
+    networks:
+      - fog_net
+      - cloud_net
+
+  iot_node_2:
+    image: iot_nodes
+    privileged: true
+    environment:
+      - CONFIG=cnf/config.json
+      - NUM=2
+    volumes:
+      - ./:/home/
+    networks:
+      - fog_net
+      - cloud_net
+
+  iot_node_3:
+    image: iot_nodes
+    privileged: true
+    environment:
+      - CONFIG=cnf/config.json
+      - NUM=3
+    volumes:
+      - ./:/home/
+    networks:
+      - fog_net
+      - cloud_net
+
+  iot_node_4:
+    image: iot_nodes
+    privileged: true
+    environment:
+      - CONFIG=cnf/config.json
+      - NUM=4
+    volumes:
+      - ./:/home/
+    networks:
+      - fog_net
+      - cloud_net
+  
+  iot_node_5:
+    image: iot_nodes
+    privileged: true
+    environment:
+      - CONFIG=cnf/config.json
+      - NUM=5
+    volumes:
+      - ./:/home/
+    networks:
+      - fog_net
+      - cloud_net
+
+  ##################################################
+
+networks:
+  fog_net:
+  cloud_net:
+  #master:

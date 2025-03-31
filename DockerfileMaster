@@ -1,0 +1,16 @@
+FROM ubuntu:22.04
+LABEL maintainer='Neco'
+
+RUN apt-get update \
+    && apt-get install -y python3 python3-pip \
+    && apt-get install -y iproute2 \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip install numpy scipy==1.9.3 pandas
+
+WORKDIR /home
+COPY . .
+
+ARG CONFIG
+
+CMD python3 master.py ${CONFIG}

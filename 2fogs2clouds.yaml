@@ -1,0 +1,85 @@
+##  Autor: Neco Villegas Saiz
+##  Universidad de Cantabria    
+##  Fecha: 03/08/2022       
+
+#Compose para 2 nodos Fog y 2 nodos Cloud
+
+#CONFIG = fichero json
+#NUM = id del nodo
+
+#######################################################################################################
+
+version: "3"
+services:
+
+  ########################## Nodo Master ##########################
+
+  master_node:
+    image: master_nodes
+    privileged: true
+    environment:
+      - CONFIG=cnf/config.json
+    volumes:
+      - ./:/home/
+    networks:
+      - master
+
+  ########################## Nodos Fog ##########################
+
+  fog_node_1:
+    image: fog_nodes
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - CONFIG=cnf/config.json
+      - NUM=1
+    volumes:
+      - ./:/home/
+    networks:
+      - master
+      - cloud
+
+  fog_node_2:
+    image: fog_nodes
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - CONFIG=cnf/config.json
+      - NUM=2
+    volumes:
+      - ./:/home/
+    networks:
+      - master
+      - cloud
+
+  ######################### Nodos Cloud #########################
+
+  cloud_node_1:
+    image: cloud_nodes
+    privileged: true
+    environment:
+      - CONFIG=cnf/config.json
+      - NUM=1
+    volumes:
+      - ./:/home/
+    networks:
+      - cloud
+
+  cloud_node_2:
+    image: cloud_nodes
+    privileged: true
+    environment:
+      - CONFIG=cnf/config.json
+      - NUM=2
+    volumes:
+      - ./:/home/
+    networks:
+      - cloud
+
+  ##################################################
+
+networks:
+  master:
+  cloud:
