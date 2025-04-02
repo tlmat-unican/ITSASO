@@ -92,4 +92,4 @@ This project is licensed under the GNU Affero General Public License v3.
 ## References
 [1] N. Villegas, L. Diez, I. De La Iglesia, M. González-Hierro and R. Agüero, "Energy-Aware Optimum Offloading Strategies in Fog-Cloud Architectures: A Lyapunov Based Scheme," in IEEE Access, vol. 11, pp. 73116-73126, 2023, doi: 10.1109/ACCESS.2023.3295496.
 
-[2] G. Nieto, N. Villegas, L. Diez, I. De La Iglesia, U. Lopez-Novoa, C. Perfecto and R. Agüero, "Comparing Control Theory and Deep Reinforcement Learning techniques for decentralized task offloading in the edge-cloud continuum," Elsevier SIMPAT, 2025. Manuscript under review.
+[2] G. Nieto, N. Villegas, L. Diez, I. De La Iglesia, U. Lopez-Novoa, C. Perfecto and R. Agüero, "Comparing Control Theory and Deep Reinforcement Learning techniques for decentralized task offloading in the edge-cloud continuum," Elsevier SIMPAT, 2025. Manuscript under review. Available at SSRN: https://ssrn.com/abstract=5200697 or http://dx.doi.org/10.2139/ssrn.5200697
