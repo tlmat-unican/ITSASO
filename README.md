@@ -88,6 +88,7 @@ This project is licensed under the GNU Affero General Public License v3.
 ## Contact
 - Neco Villegas ([neco.villegas@unican.es](mailto:neco.villegas@unican.es))
 - Gorka Nieto ([gnieto@ikerlan.es](mailto:gnieto@ikerlan.es))
+- Idoia de la Iglesia ([idelaiglesia@ikerlan.es](mailto:idelaiglesia@ikerlan.es))
 
 ## References
 [1] N. Villegas, L. Diez, I. De La Iglesia, M. González-Hierro and R. Agüero, "Energy-Aware Optimum Offloading Strategies in Fog-Cloud Architectures: A Lyapunov Based Scheme," in IEEE Access, vol. 11, pp. 73116-73126, 2023, doi: 10.1109/ACCESS.2023.3295496.
